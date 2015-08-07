@@ -130,7 +130,25 @@
             <!--/col-->
         </div>
         <!--/container-->
+        <div class="container"><div class="row"><div>
+            
+            How to eat crabs!! The righ way!
+            <a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/watch?v=r3jlJv3kKpI">VIDEO</a>
 
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div>
+                    <iframe width="100%" height="350" src=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            
+        </div></div></div>
         <div class="container" id="section7">
             <h1>We Deliver!</h1>
             <div class="row">
@@ -282,6 +300,7 @@
                     <ul class="list-inline center-block">
                         <li><a href="http://www.facebook.com/CrabbyShackBK"><img src="/img/social-icons/56/social-006_facebook.png"></a></li>
                         <li><a href="http://instagram.com/thecrabbyshack"><img src="/img/social-icons/56/social-038_instagram.png"></a></li>
+                        <li><a href="http://twitter.com/thecrabbyshack"><img src="/img/social-icons/56/social-003_twitter.png"></a></li>                        
                     </ul>
                 </div>
                 <!--/col-->
@@ -322,17 +341,16 @@
         </div>
     </div>
 
-
     <!-- script references -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"></script>
     <script src="js/scripts.js"></script>
-
+    <script>
+        $(document).ready(function(){
+            autoPlayYouTubeModal();
+        });
+    </script>
     <!-- google analytics included via google tag manager -->
-
-
-
 </body>
-
 </html>
