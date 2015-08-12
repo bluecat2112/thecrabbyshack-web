@@ -17,12 +17,11 @@ h1,h2,h3,h4 {
 
 header {
   background: #FFF;
-  height:550px;
-  color:#000;
+  /*height:550px;*/
 }
-.jumbotron {padding: 0;}
+.jumbotron {padding: 0;margin-bottom: 0;}
 .jumbotron .splashscreen{
-  padding: 20px;
+  
   background: url('/img/background.jpg') repeat-y;
   background-size: 100%;
 }
@@ -30,11 +29,10 @@ header {
 .logo {
   height:484px;
   width:500px;
-  color:#000;
-  background: url('/img/thecrabbyshack.logo.png') no-repeat;
+  background: url('/img/thecrabbyshack.logo.png') no-repeat center top;
 }
 
-header h1,header h2,header h3,header h3 a,header a,header a:hover {
+header h1,header h2,header a,header a:hover {
   color:#101010;
   font-weight:800;
   text-decoration:none;
@@ -54,6 +52,9 @@ h1 {
 h2 {
   font-family: 'Lobster', cursive;
     color:#b6402f;
+}
+h3 {
+    color:#003148;
 }
 
 #nav {
@@ -122,12 +123,6 @@ h2 {
   background: url('/img/thecrabbyshack.logo.mini.png') no-repeat center;
 }
 
-@media (max-width: 768px) {
-	header {
-		height: 195px;
-	}
-}
-
 #map-canvas {
   	width: 100%; 
   	height: 300px;
@@ -136,12 +131,13 @@ h2 {
 } 
 
 section {
-  color: #ffffff;
+  color: #fff;
   min-height: 500px;
   height: auto !important;
   height: 100%;
   padding-top:100px;
 }
+#section4 {margin-top:20px; }
 
 .bg-1 {
 	background: url('/img/crabrolls.jpg') no-repeat center center fixed; 
@@ -183,13 +179,20 @@ section#section4 {padding: 60px 0;}
 #section4 .bubble {padding:10px 40px;background-color:rgba(255,255,255,.8);border-radius:15px;}
 #section4 p {font-size: 1.2em;color:#333;padding:5px 0px;text-align: left;text-rendering:optimizeLegibility;}
 
+#section6 li a {margin:20px; color:#a2d2e8;}
+#section6 li a:hover {color:#086CA2;}
 
-
-.dl-horizontal dt {width: 60px;}
-.dl-horizontal dd {width: 140px;margin-left: 70px;}
+.picframe {
+  margin-top: 20px;
+  padding:20px;
+  border-radius:15px;
+  background-color: aliceblue;
+}
+dl, address {border-radius:15px;background-color: #fff;padding:10px;margin-bottom: 0;}
+.dl-horizontal dt {width: 45px;}
+.dl-horizontal dd {width: 130px;margin-left: 55px;}
 
 .kit {
-  margin-left: 15px;
   margin-top: 0;
 }
 .message {margin-left: 15px;}
@@ -207,35 +210,27 @@ section#section4 {padding: 60px 0;}
 }
 #section8 ul li {margin:20px;}
 
-@media only screen and (max-width: 1024px) {
-  #page1 span {padding:0 40px;}
-}
 @media only screen and (max-width: 800px) {
   .jumbotron {
     background: url('/img/background.jpg') no-repeat;
     background-size: 800px 600px;
   }
   .logo {
-    height:400px;
-    width:100%;
-    background: url('/img/thecrabbyshack.logo.png') no-repeat center top;
+    height:290px;
+    width:300px;
     background-size: 300px 290px;
-    margin:10px;
   }
-  header {height:350px;}
-  section#section4 {min-height: 600px;}
-  #page1 span {padding:0 10px;}
+
   .bg-1 {
     background-attachment: scroll;
     background-size: 100%;
     background-position: top;
   }
-
+    
   .bg-3 {
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: 100%;
     background-position: top;
-    background-repeat: repeat-y;
   }
 }
 
@@ -245,14 +240,12 @@ section#section4 {padding: 60px 0;}
     background: url('/img/background.jpg') no-repeat;
     background-size: 600px 800px;
   }
-  .logo {
-    height:400px;
-    width:100%;
-    background: url('/img/thecrabbyshack.logo.png') no-repeat center top;
-    background-size: 300px 290px;
-    margin:10px;
+  
+  #page1 h2 {
+    font-size: 30px;
+    letter-spacing:0.2em;
   }
-  #page1 h2 {font-size: 30px;}
+    
   .divider {height: 20px;}
   #location .pull-right{
     float: left!important;
@@ -316,36 +309,16 @@ section#section4 {padding: 60px 0;}
 }
 
 @media only screen and (max-width: 400px) {
-  header {
-    height:300px;
-  }
-  .jumbotron {
-    background-size: 320px 480px;
-  }
-  .logo {
-    height:242px;
-    width:250px;
-    background: url('/img/thecrabbyshack.logo.png') no-repeat;
-    background-size: 250px 242px;
-    margin:10px;
+  #page1 h2 {
+    font-size: 20px;
   }
   .bg-1 {
     background-size: 100%;
-    background: url('') fixed; 
+    
     background-repeat: no-repeat;
     background-position: top;
 
   }
-  #fixedbg{
-    background:url('/img/crabrolls-v.jpg') no-repeat top left;
-    height:100%;
-    position:fixed;
-    width:340px;
-    z-index:-1;
-    top:0;
-  }
-  .divider {background-color: rgb(240, 248, 255);}
-  .row#location, #section6 {background-color: white;}
 
   .bg-3 {
     background-image: url('/img/gwenandfifi-v.jpg');

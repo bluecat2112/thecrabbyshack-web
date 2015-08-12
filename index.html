@@ -25,6 +25,7 @@
 
     <title>The Crabby Shack - Brooklyn</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -96,7 +97,7 @@
                         <li><a href="#section5">Location</a></li>
                         <li><a href="#section8">Press</a></li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">We Deliver! <i class="caret"></i></a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">We&nbsp;Deliver!&nbsp;<i class="caret"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://eat24hrs.com/restaurants/order2/index.php?id=38217">EAT24</a></li>
                                 <li><a href="http://www.seamless.com/food-delivery/the-crabby-shack-franklin-ave-brooklyn.38486.r">Seamless</a></li>
@@ -116,9 +117,9 @@
 
         <section class="container-fluid bg-1" id="page1">
             <div class="row text-center center-block">
-                <div class="col-md-4 col-xs-12"><h2>EAT</h2></div>
-                <div class="col-md-4 col-xs-12"><h2>DRINK</h2></div>
-                <div class="col-md-4 col-xs-12"><h2>SMILE</h2></div>
+                <div class="col-xs-4 col-xs-12"><h2>EAT</h2></div>
+                <div class="col-xs-4 col-xs-12"><h2>DRINK</h2></div>
+                <div class="col-xs-4 col-xs-12"><h2>SMILE</h2></div>
             </div>
         </section>
 
@@ -130,39 +131,42 @@
             <!--/col-->
         </div>
         <!--/container-->
-        <div class="container"><div class="row"><div>
+        
+        
+        <div class="container">
+            <div class="alert alert-info text-center" role="alert">
+                <h3><i class="fa fa-magic fa-3x"></i> How to eat crabs!! The righ way!</h3>
+                <a href="#" class="alert-link" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/r3jlJv3kKpI">VIDEO</a>
+            </div>
             
-            How to eat crabs!! The righ way!
-            <a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/watch?v=r3jlJv3kKpI">VIDEO</a>
-
+            
+            
 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <div>
-                    <iframe width="100%" height="350" src=""></iframe>
-                </div>
+                <div><iframe width="100%" height="350" src=""></iframe></div>
             </div>
         </div>
     </div>
 </div>
             
-        </div></div></div>
+       </div>
         <div class="container" id="section7">
             <h1>We Deliver!</h1>
-            <div class="row">
-                <div class="col-md-6">                    
-                    <p><strong>Call us to place an order! (<a href="#section2">menu</a>)</strong> <strong>(718) 484-1507</strong></p>
-                    <p><strong><a href="#section5">check the map</a> to find out if we deliver to your address in Brooklyn!!</strong></p>
+            <div class="row picframe">
+                <div class="col-md-5 text-center">
+                    <h3>Call us!</h3>
+                    <p><strong>To place an order! (718) 484-1507 | <a href="#section5">check the map</a> to find out if we deliver to your address in Brooklyn!!</strong></p>
                 </div>
-            
-                <div class="col-md-6">
-                    <h4>Place an order online</h4>
+                
+                <div class="col-md-6 col-md-offset-1 text-center">
+                    <h3>Place an order online</h3>
                     <ul class="list-inline">
-                        <li><a href="http://eat24hrs.com/restaurants/order2/index.php?id=38217">EAT24</a></li>
-                        <li><a href="http://www.seamless.com/food-delivery/the-crabby-shack-franklin-ave-brooklyn.38486.r">Seamless</a></li>
-                        <li><a href="https://www.grubhub.com/nyc/the-crabby-shack/">GrubHub</a></li>
+                        <li><a href="http://eat24hrs.com/restaurants/order2/index.php?id=38217"><img src="img/logos/eat24.png" alt="EAT24" class="img-thumbnail"></a></li>
+                        <li><a href="http://www.seamless.com/food-delivery/the-crabby-shack-franklin-ave-brooklyn.38486.r"><img src="img/logos/seamless.png" alt="Seamless" class="img-thumbnail"></a></li>
+                        <li><a href="https://www.grubhub.com/nyc/the-crabby-shack/"><img src="img/logos/grubhub.png" alt="Grub Hub" class="img-thumbnail"></a></li>
                     </ul>
 
                 </div>
@@ -173,7 +177,7 @@
 
         <section class="container-fluid bg-3" id="section4">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 bubble">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 bubble">
                     <h1>Our Story</h1>
                     <p>Two women, Fifi and Gwen, passionate for crabs!</p>
                     <p>In Philadelphia, where Fifi grew up, crabs are a popular fare. Every neighborhood in Philly has a few crab places serving up – steamed and seasoned to perfection – Blue crab, Dungeness crab, and Alaskan Snow crab. Not so in New York. Fifi found herself frequenting the market in order to make them herself. Preparing crab perfection became a passion and it became a dream to open a restaurant dedicated to serving delicious crabs in Brooklyn!</p>
@@ -197,7 +201,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-8">
                     <h2 class="kit">Keep in touch!</h2>
                     <form method="post" action="javascript:frmValidate();" name="subscribeform">
                         <input type="hidden" name="htmlemail" value="1" />
@@ -206,23 +210,23 @@
                         <input type="hidden" name="VerificationCodeX" value="" size="20">
 
                         <div class="row form-group">
-                            <div class="col-xs-5">
+                            <div class="col-md-4 col-sm-4">
                                 <input type="text" class="form-control" id="firstName" name="attribute1" placeholder="First Name" required="required">
                             </div>
-                            <div class="col-xs-5">
+                            <div class="col-md-4 col-sm-4">
                                 <input type="text" class="form-control" id="lastName" name="attribute2" placeholder="Last Name" required="required">
                             </div>
                         </div>
                         <div class="row form-group">
-                            <div class="col-xs-4">
+                            <div class="col-md-3 col-sm-3">
                                 <input id="ml_email" type="email" class="form-control" name="email" placeholder="Email" required="required">
                             </div>
-                            <div class="col-xs-4">
+                            <div class="col-md-3 col-sm-3 col-xs-10">
                                 <input type="email" class="form-control" name="emailconfirm" placeholder="Confirm Email" required="required">
 
                             </div>
-                            <div class="col-xs-4">
-                                <button class="btn btn-default">Subscribe</button>
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                <button class="btn btn-info">Subscribe</button>
                             </div>
                         </div>
 
@@ -231,17 +235,20 @@
                     <div id="message"></div>
 
                 </div>
-                <div class="col-md-3 pull-right">
+                
+                <div class="col-md-3 col-sm-4 col-xs-6 ">
+                    <div class="picframe">
                     <address>
                         <strong>The Crabby Shack</strong><br>
                         613 Franklin Ave<br>
                         Brooklyn, NY 11238<br>
                         P: (718) 484-1507
                     </address>
+                    </div>
                     
-                    <strong>Hours</strong>
+                    <div class="picframe">
+                    <strong>Hours:</strong>
                     <dl class="dl-horizontal">
-                        
                         <dt><label>Mon:</label></dt><dd>3:00pm - 10:00pm</dd>
                         <dt><label>Tue:</label></dt><dd>Closed</dd>
                         <dt><label>Wed:</label></dt><dd>3:00pm - 10:00pm</dd>
@@ -250,6 +257,7 @@
                         <dt><label>Sat:</label></dt><dd>1:00pm - 11:00pm</dd>
                         <dt><label>Sun:</label></dt><dd>1:00pm - 9:00pm</dd>
                     </dl>
+                    </div>
                 </div>
             </div>
             <!--/row-->
@@ -298,9 +306,9 @@
                     <h1>Follow us on social media</h1>
                     <hr>
                     <ul class="list-inline center-block">
-                        <li><a href="http://www.facebook.com/CrabbyShackBK"><img src="/img/social-icons/56/social-006_facebook.png"></a></li>
-                        <li><a href="http://instagram.com/thecrabbyshack"><img src="/img/social-icons/56/social-038_instagram.png"></a></li>
-                        <li><a href="http://twitter.com/thecrabbyshack"><img src="/img/social-icons/56/social-003_twitter.png"></a></li>                        
+                        <li><a href="http://www.facebook.com/CrabbyShackBK"><i class="fa fa-facebook-square fa-5x"></i></a></li>
+                        <li><a href="http://instagram.com/thecrabbyshack"><i class="fa fa-instagram fa-5x"></i></a></li>
+                        <li><a href="http://twitter.com/thecrabbyshack"><i class="fa fa-twitter-square fa-5x"></i></a></li>                        
                     </ul>
                 </div>
                 <!--/col-->
