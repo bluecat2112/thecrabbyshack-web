@@ -70,11 +70,11 @@ function initialize() {
   ];
   var polygon = new google.maps.Polygon({
     paths: deliveryArea,
-    strokeColor:"navy",
+    strokeColor:"#003148",
     strokeOpacity: 0.5,
     strokeWeight: 2,
-    fillColor: "aqua",
-    fillOpacity: 0.35
+    fillColor: "#086CA2",
+    fillOpacity: 0.5
 
   });
   polygon.setMap(map);
