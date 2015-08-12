@@ -69,11 +69,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo center-block"></div>
+                        <h3 class="text-center">613 Franklin Ave Brooklyn, NY 11238</h3>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3>613 Franklin Ave Brooklyn, NY 11238</h3></div>
                 </div>
             </div>
         </header>
@@ -91,7 +88,7 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav nav-justified">
                         <li class="active"><a href="/" class="miniLogo"><strong>&nbsp;</strong></a></li>
-                        <li><a href="menuSection">Menu</a></li>
+                        <li><a href="#menuSection">Menu</a></li>
                         <li><a href="#socialmediaSection">News</a></li>
                         <li><a href="#aboutUsSection">About</a></li>
                         <li><a href="#locationSection">Location</a></li>
@@ -124,8 +121,7 @@
 
         <section class="container" id="menuSection">
             <div class="col-md-12">
-                <img class="hidden-xs" src="/img/menucs011215.png?01122015">
-                <img class="visible-xs-block" src="/img/menu-phone.png?01122015">
+                <img src="/img/menucs011215.png?01122015">
             </div>
         </section>        
         
@@ -185,13 +181,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-11 col-md-offset-1">delivery zone</div>
+                <div class="col-md-11 col-md-offset-1"><i class="fa fa-bicycle"></i> delivery zone</div>
             </div>
         </section>
 
-        <section class="container">
+        <section class="container" id="detailsSection">
             <div class="row">
-                <div class="col-md-8 col-sm-8 picframe">
+                <div id="mailSubs" class="col-md-8 col-sm-8 picframe">
                     <h2 class="kit">Keep in touch!</h2>
                     <form method="post" action="javascript:frmValidate();" name="subscribeform">
                         <input type="hidden" name="htmlemail" value="1" />
@@ -200,22 +196,23 @@
                         <input type="hidden" name="VerificationCodeX" value="" size="20">
 
                         <div class="row form-group">
-                            <div class="col-md-4 col-sm-4">
+                            <div class="col-sm-6">
                                 <input type="text" class="form-control" id="firstName" name="attribute1" placeholder="First Name" required="required">
                             </div>
-                            <div class="col-md-4 col-sm-4">
+                            <div class="col-sm-6">
                                 <input type="text" class="form-control" id="lastName" name="attribute2" placeholder="Last Name" required="required">
                             </div>
                         </div>
                         <div class="row form-group">
-                            <div class="col-md-3 col-sm-3">
+                            <div class="col-sm-6">
                                 <input id="ml_email" type="email" class="form-control" name="email" placeholder="Email" required="required">
                             </div>
-                            <div class="col-md-3 col-sm-3 col-xs-10">
+                            <div class="col-sm-6">
                                 <input type="email" class="form-control" name="emailconfirm" placeholder="Confirm Email" required="required">
-
                             </div>
-                            <div class="col-md-2 col-sm-2 col-xs-2">
+                        </div>
+                        <div class="row pull-right">
+                            <div class="col-sm-12">
                                 <button class="btn btn-info">Subscribe</button>
                             </div>
                         </div>
@@ -226,18 +223,18 @@
 
                 </div>
                 
-                <div class="col-md-3 col-sm-4 col-xs-6 ">
+                <div class="col-md-3 col-sm-4 col-xs-7">
                     <div class="picframe">
-                    <address>
+                    <address class="text-nowrap">
                         <strong>The Crabby Shack</strong><br>
                         613 Franklin Ave<br>
                         Brooklyn, NY 11238<br>
-                        P: (718) 484-1507
+                        <i class="glyphicon glyphicon-phone-alt"></i> (718) 484-1507
                     </address>
                     </div>
                     
                     <div class="picframe">
-                    <strong>Hours:</strong>
+                    <strong><i class="fa fa-clock-o"></i> Hours:</strong>
                     <dl class="dl-horizontal">
                         <dt><label>Mon:</label></dt><dd>3:00pm - 10:00pm</dd>
                         <dt><label>Tue:</label></dt><dd>Closed</dd>

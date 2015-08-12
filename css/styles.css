@@ -196,7 +196,7 @@ section#aboutUsSection {padding: 60px 0;}
 }
 
 section dl, section address {border-radius:15px;background-color: #fff;padding:10px;margin-bottom: 0;}
-.dl-horizontal dt {width: 45px;}
+.dl-horizontal dt {width: 45px;float: left;}
 .dl-horizontal dd {width: 130px;margin-left: 55px;}
 
 .kit {
@@ -259,31 +259,27 @@ section dl, section address {border-radius:15px;background-color: #fff;padding:1
     float: left!important;
     padding-left: 30px;
   }
+  #mailSubs.picframe {padding:42px;}
   #footer img {width:90px;}
-    #footer {font-size: 70%;}
-    #footer .fa-3x {font-size:2em;}
+  #footer {font-size: 70%;}
+  #footer .fa-3x {font-size:2em;}
 }
 @media only screen and (max-width: 500px) {
-  body {font-size: 90%;}
-  header {
-    height:290px;
-  }
-
   .jumbotron {
     background-size: 480px 320px;
   }
   .form-control {font-size: 12px;}
   .logo {
-    height:368px;
+    height:214px;
     width:100%;
     background: url('/img/thecrabbyshack.logo.png') no-repeat center top;
-    background-size: 300px 290px;
-    margin:10px;
+    background-size: 220px 213px;
+    margin:10px 0;
   }
-  section {min-height: 320px;}
+  section {min-height: 330px;}
   section#aboutUsSection {padding-top: 30px;}
   #aboutUsSection p {
-    font-size: 18px;
+    /*font-size: 18px;*/
     padding:5px 10px;
   }
 
@@ -298,6 +294,7 @@ section dl, section address {border-radius:15px;background-color: #fff;padding:1
     font-size: 30px;
     line-height: 60px;
   }
+  header h3 {font-size:18px;}
   #menuSection {margin-top:0;}
   #menuSection img{width:100%;}
   #menuSection ul {
@@ -317,12 +314,23 @@ section dl, section address {border-radius:15px;background-color: #fff;padding:1
     background-position: top;
     background-repeat: repeat-y;
   }
+    #deliverySection img {width:65px}
 }
 
 @media only screen and (max-width: 400px) {
   #page1 h2 {
-    font-size: 20px;
+    font-size: 18px;
+      
+    text-shadow: 
+      1px 1px #086CA2, 
+      -1px -1px 0 #086CA2, 
+      1px -1px 0 #086CA2, 
+      -1px 1px 0 #086CA2; 
   }
+    section {
+        min-height: 220px;
+        padding-top: 30px;
+     }
   .bg-1 {
     background-size: 100%;
     
@@ -338,6 +346,19 @@ section dl, section address {border-radius:15px;background-color: #fff;padding:1
     background-position: top;
     background-repeat: repeat-y;
   }
+    #menuSection {
+        height:720px;
+    }
+    #menuSection .col-md-12 {
+        height:720px;
+        padding:0;
+        background: url('/img/menu-phone.png') no-repeat left top;
+    }
+    #menuSection img {
+        display:none;
+    }
+    #detailsSection .col-xs-7 {width:85%}
+    #socialmediaSection .fa-5x {font-size:3em;}
     #footer {font-size: 80%;}
     #footer img {width:75px;}
 }
