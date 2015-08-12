@@ -125,19 +125,18 @@ h3 {
 
 #map-canvas {
   	width: 100%; 
-  	height: 300px;
+  	height: 360px;
 	margin: 0;
-	padding: 15px;
 } 
 
 section {
-  color: #fff;
   min-height: 500px;
   height: auto !important;
   height: 100%;
   padding-top:100px;
 }
-#section4 {margin-top:20px; }
+
+#aboutUsSection {margin-top:20px; }
 
 .bg-1 {
 	background: url('/img/crabrolls.jpg') no-repeat center center fixed; 
@@ -164,23 +163,30 @@ section {
   letter-spacing:14px;
   color: #FFF;
 
-  text-shadow: 2px 0 0 #086CA2, -2px 0 0 #086CA2, 0 2px 0 #086CA2, 0 -2px 0 #086CA2, 1px 1px #086CA2, -1px -1px 0 #086CA2, 1px -1px 0 #086CA2, -1px 1px 0 #086CA2;
-    
+  text-shadow: 2px 0 0 #086CA2, 
+      -2px 0 0 #086CA2, 
+      0 2px 0 #086CA2, 
+      0 -2px 0 #086CA2, 
+      1px 1px #086CA2, 
+      -1px -1px 0 #086CA2, 
+      1px -1px 0 #086CA2, 
+      -1px 1px 0 #086CA2,
+      3px 0 0 #FFF;
 }
 
-#section2 {
+#menuSection {
   margin-top: 20px;
   border-radius:15px;
   background-color: aliceblue;
 }
-#section2 img {width:100%; margin-bottom: 40px;}
+#menuSection img {width:100%; margin-bottom: 40px;}
 
-section#section4 {padding: 60px 0;}
-#section4 .bubble {padding:10px 40px;background-color:rgba(255,255,255,.8);border-radius:15px;}
-#section4 p {font-size: 1.2em;color:#333;padding:5px 0px;text-align: left;text-rendering:optimizeLegibility;}
+section#aboutUsSection {padding: 60px 0;}
+#aboutUsSection .bubble {padding:10px 40px;background-color:rgba(255,255,255,.8);border-radius:15px;}
+#aboutUsSection p {font-size: 1.2em;color:#333;padding:5px 0px;text-align: left;text-rendering:optimizeLegibility;}
 
-#section6 li a {margin:20px; color:#a2d2e8;}
-#section6 li a:hover {color:#086CA2;}
+#socialmediaSection li a {margin:20px; color:#a2d2e8;}
+#socialmediaSection li a:hover {color:#086CA2;}
 
 .picframe {
   margin-top: 20px;
@@ -188,7 +194,8 @@ section#section4 {padding: 60px 0;}
   border-radius:15px;
   background-color: aliceblue;
 }
-dl, address {border-radius:15px;background-color: #fff;padding:10px;margin-bottom: 0;}
+
+section dl, section address {border-radius:15px;background-color: #fff;padding:10px;margin-bottom: 0;}
 .dl-horizontal dt {width: 45px;}
 .dl-horizontal dd {width: 130px;margin-left: 55px;}
 
@@ -208,7 +215,8 @@ dl, address {border-radius:15px;background-color: #fff;padding:10px;margin-botto
   border-radius: 8px;
   font-size: 120%;
 }
-#section8 ul li {margin:20px;}
+#pressSection ul li {margin:20px;}
+#footer img {width:140px; background-color:#FFF;}
 
 @media only screen and (max-width: 800px) {
   .jumbotron {
@@ -251,6 +259,9 @@ dl, address {border-radius:15px;background-color: #fff;padding:10px;margin-botto
     float: left!important;
     padding-left: 30px;
   }
+  #footer img {width:90px;}
+    #footer {font-size: 70%;}
+    #footer .fa-3x {font-size:2em;}
 }
 @media only screen and (max-width: 500px) {
   body {font-size: 90%;}
@@ -270,8 +281,8 @@ dl, address {border-radius:15px;background-color: #fff;padding:10px;margin-botto
     margin:10px;
   }
   section {min-height: 320px;}
-  section#section4 {padding-top: 30px;}
-  #section4 p {
+  section#aboutUsSection {padding-top: 30px;}
+  #aboutUsSection p {
     font-size: 18px;
     padding:5px 10px;
   }
@@ -287,9 +298,9 @@ dl, address {border-radius:15px;background-color: #fff;padding:10px;margin-botto
     font-size: 30px;
     line-height: 60px;
   }
-  #section2 {margin-top:0;}
-  #section2 img{width:100%;}
-  #section2 ul {
+  #menuSection {margin-top:0;}
+  #menuSection img{width:100%;}
+  #menuSection ul {
     font-size: 22px;
     line-height: 32px;
     padding-left: 0;
@@ -327,6 +338,8 @@ dl, address {border-radius:15px;background-color: #fff;padding:10px;margin-botto
     background-position: top;
     background-repeat: repeat-y;
   }
+    #footer {font-size: 80%;}
+    #footer img {width:75px;}
 }
 
 /* Sticky footer styles
@@ -337,18 +350,19 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 200px;
 }
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 160px;
 }
 #footer {
   color: #efefef;
   background-color: #414141;
+  padding: 20px;
 }
 #footer a {
   color: #9af7fe;

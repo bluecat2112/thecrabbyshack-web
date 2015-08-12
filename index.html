@@ -91,18 +91,17 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav nav-justified">
                         <li class="active"><a href="/" class="miniLogo"><strong>&nbsp;</strong></a></li>
-                        <li><a href="#section2">Menu</a></li>
-                        <li><a href="#section6">News</a></li>
-                        <li><a href="#section4">About</a></li>
-                        <li><a href="#section5">Location</a></li>
-                        <li><a href="#section8">Press</a></li>
+                        <li><a href="menuSection">Menu</a></li>
+                        <li><a href="#socialmediaSection">News</a></li>
+                        <li><a href="#aboutUsSection">About</a></li>
+                        <li><a href="#locationSection">Location</a></li>
+                        <li><a href="#pressSection">Press</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">We&nbsp;Deliver!&nbsp;<i class="caret"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="http://eat24hrs.com/restaurants/order2/index.php?id=38217">EAT24</a></li>
                                 <li><a href="http://www.seamless.com/food-delivery/the-crabby-shack-franklin-ave-brooklyn.38486.r">Seamless</a></li>
                                 <li><a href="https://www.grubhub.com/nyc/the-crabby-shack/">GrubHub</a></li>
-
                             </ul>
                         </li>
                     </ul>
@@ -123,44 +122,39 @@
             </div>
         </section>
 
-        <div class="container" id="section2">
+        <section class="container" id="menuSection">
             <div class="col-md-12">
                 <img class="hidden-xs" src="/img/menucs011215.png?01122015">
                 <img class="visible-xs-block" src="/img/menu-phone.png?01122015">
             </div>
-            <!--/col-->
-        </div>
-        <!--/container-->
-        
+        </section>        
         
         <div class="container">
             <div class="alert alert-info text-center" role="alert">
                 <h3><i class="fa fa-magic fa-3x"></i> How to eat crabs!! The right way!</h3>
                 <a href="#" class="alert-link" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/r3jlJv3kKpI">VIDEO</a>
             </div>
-            
-            
-            
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <div><iframe width="100%" height="350" src=""></iframe></div>
-            </div>
+            <!-- video modal-->
+            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <div><iframe width="100%" height="350" src=""></iframe></div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
         </div>
-    </div>
-</div>
-            
-       </div>
-        <div class="container" id="section7">
+        
+        <section class="container" id="deliverySection">
             <h1>We Deliver!</h1>
             <div class="row picframe">
                 <div class="col-md-5 text-center">
                     <h3>Call us!</h3>
-                    <p><strong>To place an order! (718) 484-1507 | <a href="#section5">check the map</a> to find out if we deliver to your address in Brooklyn!!</strong></p>
-                </div>
-                
+                    <p><strong><i class="glyphicon glyphicon-phone-alt"></i> (718) 484-1507 to place an order!<br>
+                        <a href="#section5">Check the map</a> to find out if we deliver to your address in Brooklyn!!</strong></p>
+                </div>          
                 <div class="col-md-6 col-md-offset-1 text-center">
                     <h3>Place an order online</h3>
                     <ul class="list-inline">
@@ -168,14 +162,11 @@
                         <li><a href="http://www.seamless.com/food-delivery/the-crabby-shack-franklin-ave-brooklyn.38486.r"><img src="img/logos/seamless.png" alt="Seamless" class="img-thumbnail"></a></li>
                         <li><a href="https://www.grubhub.com/nyc/the-crabby-shack/"><img src="img/logos/grubhub.png" alt="Grub Hub" class="img-thumbnail"></a></li>
                     </ul>
-
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="divider"></div>
-
-        <section class="container-fluid bg-3" id="section4">
+        <section class="container-fluid bg-3" id="aboutUsSection">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 bubble">
                     <h1>Our Story</h1>
@@ -186,8 +177,7 @@
             </div>
         </section>
 
-        <div class="container-fluid" id="section5">
-
+        <section class="container-fluid" id="locationSection">
             <div class="row" id="location">
                 <div class="col-md-12">
                     <h1 class="text-center">We are in Brooklyn!</h1>
@@ -195,13 +185,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">delivery zone</div>
+                <div class="col-md-11 col-md-offset-1">delivery zone</div>
             </div>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-8">
+                <div class="col-md-8 col-sm-8 picframe">
                     <h2 class="kit">Keep in touch!</h2>
                     <form method="post" action="javascript:frmValidate();" name="subscribeform">
                         <input type="hidden" name="htmlemail" value="1" />
@@ -261,9 +251,9 @@
                 </div>
             </div>
             <!--/row-->
-        </div>
+        </section>
 
-        <div class="container" id="section8">
+        <section class="container" id="pressSection">
             <div class="row">
                 <div class="col-md-9 col-md-offset-1 text-center">
                     <h1>Press</h1>
@@ -290,17 +280,14 @@
                         <li>
                             <a href="http://www.huffingtonpost.com/2015/01/21/the-crabby-shack_n_6517348.html" target="_blank"><img src="/img/press/huffpo.png"></a>
                         </li>
-
                     </ul>
-
                 </div>
-                <!--/col-->
             </div>
-        </div>
+        </section>
         <!--/container-->
 
 
-        <div class="container" id="section6">
+        <div class="container" id="socialmediaSection">
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2 text-center">
                     <h1>Follow us on social media</h1>
@@ -321,9 +308,14 @@
 
     <div id="footer">
         <div class="container-fluid">
-            <div class='row'>
-                <div class="col-sm-2 text-muted">&copy; The Crabby Shack</div>
-                <div class="col-sm-1">
+            <div class="row">
+                <div class="col-sm-3 col-xs-4 col-sm-offset-1 text-muted text-nowrap"><i class="glyphicon glyphicon-copyright-mark"></i> <strong>The Crabby Shack</strong>
+                    <address>
+                        613 Franklin Ave<br>
+                        Brooklyn, NY 11238<br>
+                        <i class="glyphicon glyphicon-phone-alt"></i> (718) 484-1507
+                    </address>
+                 
                     <a href="//www.iubenda.com/privacy-policy/514658" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a>
                     <script type="text/javascript">
                         (function(w, d) {
@@ -343,8 +335,19 @@
                         })(window, document);
 
                     </script>
-
+                    
                 </div>
+                <div class="col-xs-2 col-xs-offset-1"><img src="img/thecrabbyshack.logo.png" class="img-circle"></div>
+                <div class="col-xs-3 pull-right">
+                    <strong class="text-nowrap">Contact Us</strong>
+                   <ul class="list-inline center-block">
+                        <li><a href="http://www.facebook.com/CrabbyShackBK"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+                        <li><a href="http://instagram.com/thecrabbyshack"><i class="fa fa-instagram fa-3x"></i></a></li>
+                        <li><a href="http://twitter.com/thecrabbyshack"><i class="fa fa-twitter-square fa-3x"></i></a></li>                        
+                    </ul>
+                   
+                </div>
+                
             </div>
         </div>
     </div>

@@ -28,31 +28,35 @@ google.maps.visualRefresh = true;
 var map;
 function initialize() {
   var mapOptions = {
-    zoom: 13,
+    zoom: 14,
     scrollwheel: false,
+    center: new google.maps.LatLng(40.6774680,-73.9554940),
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
-  map = new google.maps.Map(document.getElementById('map-canvas'),
-      mapOptions);
+    
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
   var options = {
     map: map,
-    position: new google.maps.LatLng(40.6774680,-73.9554940),
-    //content: 'The Crabby Shack'
+    position: new google.maps.LatLng(40.6774680,-73.9554940)
   };
 
+  var image = 'img/thecrabbyshack.logo.mini.png';
   var marker = new google.maps.Marker({
     position: options.position,
     map: map,
+    animation: google.maps.Animation.DROP,
+    icon:image,
     title:"The Crabby Shack"});
-  marker.setMap(map); 
+    
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
 
   var infoOptions = {
-      content: 'The Crabby Shack<br>address here'
+      content: '<div><strong>The Crabby Shack</strong><br>613 Franklin Ave<br>Brooklyn, NY 11238<br><i class="glyphicon glyphicon-phone-alt"></i> (718) 484-1507</div>'
   };
   var infowindow = new google.maps.InfoWindow(infoOptions); 
-
-  map.setCenter(options.position);
 
   deliveryArea =[
     new google.maps.LatLng(40.686408,-73.968534),
@@ -71,10 +75,10 @@ function initialize() {
   var polygon = new google.maps.Polygon({
     paths: deliveryArea,
     strokeColor:"#003148",
-    strokeOpacity: 0.5,
-    strokeWeight: 2,
+    strokeOpacity: 1,
+    strokeWeight: 1,
     fillColor: "#086CA2",
-    fillOpacity: 0.5
+    fillOpacity: 0.4
 
   });
   polygon.setMap(map);
