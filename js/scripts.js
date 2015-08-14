@@ -10,6 +10,11 @@ $('body').scrollspy({ target: '#nav' })
 
 /* smooth scrolling for scroll to top */
 $('.scroll-top').click(function(){
+    var link = $(this).attr('href');
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname){
+        $(this).removeAttr('href');
+    }
   $('body,html').animate({scrollTop:0},1000);
 })
 
