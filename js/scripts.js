@@ -9,11 +9,12 @@ $('#nav').affix({
 $('body').scrollspy({ target: '#nav' })
 
 /* smooth scrolling for scroll to top */
-$('.scroll-top').click(function(){
+$('.scroll-top').click(function(e){
     var link = $(this).attr('href');
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
     && location.hostname == this.hostname){
-        $(this).removeAttr('href');
+        e.preventDefault();
+        history.replaceState(null, null, link);
     }
   $('body,html').animate({scrollTop:0},1000);
 })
