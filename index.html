@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+<script type="text/javascript" src='//places.singleplatform.com/static/js/mobile-redirect-min.js'></script>
+<script type="text/javascript">
+    redirect_mobile_browser('http://places.singleplatform.com/the-crabby-shack/menu?ref=integration');
+</script>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="description" content="Come enjoy our famous delicious crab rolls in Brooklyn! The Crabby Shack is your destination for all things crabs! Crab legs, crab cakes, crab tacos, and lots more!">
@@ -121,7 +125,34 @@
 
         <section class="container" id="menuSection">
             <div class="col-md-12">
-                <img src="/img/menucs082415.png">
+                <div id="menusContainer"></div>
+<script type="text/javascript" src="http://menus.singleplatform.co/businesses/storefront/?apiKey=ke09z8icq4xu8uiiccighy1bw">
+</script>
+<script>
+    var options = {};
+    options['PrimaryBackgroundColor'] = '#F0F8FF';
+    options['MenuDescBackgroundColor'] = '#F0F8FF';
+    options['SectionTitleBackgroundColor'] = '#F0F8FF';
+    options['SectionDescBackgroundColor'] = '#F0F8FF';
+    options['ItemBackgroundColor'] = '#F0F8FF';
+    options['PrimaryFontFamily'] = 'Helvetica';
+    options['BaseFontSize'] = '14px';
+    options['FontCasing'] = 'Default';
+    options['PrimaryFontColor'] = '#333333';
+    options['MenuDescFontColor'] = '#333333';
+    options['SectionTitleFontColor'] = '#b6402f';
+    options['SectionDescFontColor'] = '#333333';
+    options['ItemTitleFontColor'] = '#333333';
+    options['FeedbackFontColor'] = '#333333';
+    options['ItemDescFontColor'] = '#333333';
+    options['ItemPriceFontColor'] = '#333333';
+    options['HideDisplayOptionPhotos'] = 'true';
+    options['HideDisplayOptionFeedback'] = 'true';
+    options['HideDisplayOptionDisclaimer'] = 'true';
+    options['HideDisplayOptionClaim'] = 'true';
+    options['MenuTemplate'] = '2';
+    new BusinessView("the-crabby-shack", "menusContainer", options);
+</script>
             </div>
         </section>        
         
